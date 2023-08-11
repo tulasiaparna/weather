@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="icon" type="image/x-icon" href="https://uxwing.com/wp-content/themes/uxwing/download/weather/weather-icon.png">
+</head>
+<body>
+    <!--//navbar-->
+    <nav class="navbar bg-primary">
+        <div class="container-fluid">
+          <ul>
+            <li>
+              <img src="https://cdn3d.iconscout.com/3d/premium/thumb/weather-6546350-5376613.png" alt="Logo" width="30" height="20" class="d-inline-block align-text-top">
+              </li>
+              <li>
+              <a id="weather" class="navbar-brand" href="#">Weather</a>
+            </li>
+            <li>
+              <input id='city' class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button onclick='show()' class="btn btn-outline-success" type="submit">Search</button>
+            </li>
+          </ul>
+    
+        </div>
+      </nav>
+
+      <div class="card">
+        <div class="card-body">
+          <h5 id="times" class="card-title">Card title</h5>
+          <p id="date" class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+            
+  
+      <br><br>
+      <ol  class="list-group list-group-numbered">
+      
+        <li class="list-group-item list-group-item-secondary">Cloud_pct : <span id="cloud_pct"></span></li>
+        <li  class="list-group-item list-group-item">Feels-like : <span id="feels_like"></span></li>
+        <li  class="list-group-item list-group-item-secondary">Humidity : <span id="humidity"></span></li>
+        <li  class="list-group-item list-group-item">Max-temp :<span id="max_temp"></span></li>
+        <li  class="list-group-item list-group-item-secondary">Min-temp : <span id="min_temp"></span></li>
+        <li  class="list-group-item list-group-item">Sunrise : <span id="sunrise"></span></li>
+        <li  class="list-group-item list-group-item-secondary">Sunset : <span id="sunset"></span></li>
+        <li  class="list-group-item list-group-item">Temp : <span id="temp"></span></li>
+        <li  class="list-group-item list-group-item-secondary">Wind-degrees : <span id="wind_degrees"></span></li>
+        <li  class="list-group-item list-group-item">Wind-speed : <span id="wind_speed"></span></li>
+      </ol>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

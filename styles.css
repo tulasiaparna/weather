@@ -1,0 +1,19 @@
+li {
+    display:inline-flex; 
+    text-decoration-color: rgb(0, 0, 0);
+  }
+
+  .btn-outline-success{
+    background-color: #000000a1; 
+  }
+
+.btn-outline-success{
+   color: 	#ffffff;
+   background-color: #3a9d0f;
+}
+.btn btn-outline-success{
+    background-color: #cc0000;
+}
+#weather{
+    color:	#ffffff;
+}
