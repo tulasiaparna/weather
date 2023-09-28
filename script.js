@@ -16,16 +16,16 @@ times.innerHTML = citye;
 
 fetch(url+'='+citye,options).then(response => response.json()).then(response =>{
 	console.log(response); 
-	cloud_pct.innerHTML= response.cloud_pct,
-    feels_like.innerHTML = response.feels_like,
-    humidity.innerHTML =  response.humidity,
-    max_temp.innerHTML =  response.max_temp,
-    min_temp.innerHTML = response.min_temp,
+	cloud_pct.innerHTML= response.cloud_pct + " %",
+    feels_like.innerHTML = response.feels_like+" °C",
+    humidity.innerHTML =  response.humidity+" %",
+    max_temp.innerHTML =  response.max_temp+" °C",
+    min_temp.innerHTML = response.min_temp+" °C",
     sunrise.innerHTML = response.sunrise,
     sunset.innerHTML =  response.sunset,
-    temp.innerHTML =  response.temp,
-    wind_degrees.innerHTML = response.wind_degrees,
-    wind_speed.innerHTML= response.wind_speed}
-	).catch(err => console.error(err));
+    temp.innerHTML =  response.temp+" °C",
+    wind_degrees.innerHTML = response.wind_degrees+" km/h",
+    wind_speed.innerHTML= response.wind_speed+" km/h"})
+    .catch(err => console.error(err));
 }
 
